@@ -8,9 +8,6 @@
 //   )
 // }
 
-
-
-
 // import React from 'react'
 
 // export default function Navbar() {
@@ -43,16 +40,14 @@
 // }
 
 
-
-
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-
+import content from './Content'
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Home', href: '#', current: true },
+  { name: 'Portfolio', href: './Content', current: false },
+  { name: 'About me', href: './Content', current: false },
+  { name: 'Testimonials', href: './Content', current: false },
 ]
 
 function classNames(...classes) {
